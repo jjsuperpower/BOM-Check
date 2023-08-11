@@ -1,0 +1,7 @@
+*.xlsx
+config.yaml
+**/__pycache__/
+venv/
+*key*
+*.zip
+*.tar.gz
