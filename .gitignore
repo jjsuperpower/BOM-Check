@@ -2,6 +2,7 @@
 config.yaml
 **/__pycache__/
 venv/
-*key*
+key.json
+key.txt
 *.zip
 *.tar.gz
