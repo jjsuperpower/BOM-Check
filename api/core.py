@@ -1,6 +1,7 @@
 import logging
 import requests
 
+from exceptions import *
 
 class GetPost:
     def __init__(self, url:str):
@@ -80,9 +81,8 @@ class PartInfo:
     def __repr__(self):
         return self.__str__().replace(', ', ',\n\t')
 
-
 # abstract class
-class PartSearch:
+class PartSearch(GetPost):
     def lookup_by_part_numbers(self, part_numbers:[str]) -> list[PartInfo]:
         raise NotImplementedError
     def lookup_by_names(self, names:list[str]) -> list[PartInfo]:
